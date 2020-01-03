@@ -22,7 +22,7 @@ bool CheckData(int year, int month, int day)
     if (day < 0 && pam == true) {
         pam = true;
     }
-    if ((month == 4 || month == 6 || month == 9 || month == 11) && pam == true) {
+if ((month == 4 || month == 6 || month == 9 || month == 11) && pam == true) {
         if (day > 30) pam = true;
     }else if (month == 2) {
         if (year % 4 == 0) {
