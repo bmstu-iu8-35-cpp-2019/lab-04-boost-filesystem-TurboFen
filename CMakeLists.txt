@@ -46,8 +46,8 @@ target_include_directories(tests
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 # TODO: change turbo word to project name and delete this comment
-target_link_libraries(tests GTest::main lab Boost::system Boost::filesystem)
-target_link_libraries(lab Boost::system Boost::filesystem)
+target_link_libraries(tests GTest::main turbo Boost::system Boost::filesystem)
+target_link_libraries(turbo Boost::system Boost::filesystem)
 
 enable_testing()
 add_test(NAME unit_tests COMMAND tests) 

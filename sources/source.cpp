@@ -24,23 +24,19 @@ bool CheckData(int year, int month, int day)
     }
     if (month == 4 || month == 6 || month == 9 || month == 11 && pam == true) {
         if (day > 30) pam = true;
-    }
-    else if (month == 2) {
+    }else if (month == 2) {
         if (year % 4 == 0) {
             if (day > 29) pam = true;
-        }
-        else {
+        }else {
             if (day > 28) pam = true;
         }
-    }
-    else {
+    }else {
         if (day > 31) pam = true;
     }
     if (pam == true)
     {
         return true;
-    }
-    else {
+    }else {
         return false;
     }
 }

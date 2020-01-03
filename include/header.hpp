@@ -6,7 +6,6 @@
 #include <iostream>
 #include <boost/filesystem.hpp>
 #include <fstream>
-#include <iostream>
 #include <string>
 #include <utility>
 #include <vector>
