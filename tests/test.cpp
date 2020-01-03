@@ -9,5 +9,5 @@ TEST(TestProg, EmptyTest) {
   char tmp1[] = "Test";
   char tmp2[] = "..//misc//ftp";
   char* argv[] = {tmp1, tmp2};
-  EXPECT_EQ(main_function(ar, argv), 0);
+  EXPECT_EQ(main_special(ar, argv), 0);
 }
