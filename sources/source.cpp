@@ -123,8 +123,14 @@ std::ostream& operator<<(std::ostream& out, const File& file) {
 int main_special(int args, char* argv[])
 {
     std::vector<File> files;
-    const boost::filesystem::path p(boost::filesystem::current_path());
-    check_files(p, files);
+    if (args == 1)
+    {
+        const boost::filesystem::path p(boost::filesystem::current_path());
+        check_files(p, files);
+    }else {
+        const boost::filesystem::path p(argv[1]);
+        check_files(p, files);
+    }
     for (auto pos : files) std::cout << std::endl << pos;
     return 0;
 }
