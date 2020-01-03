@@ -5,7 +5,9 @@
 
 TEST(TestProg, EmptyTest) {
   std::vector<File> files;
-  char* argv[] = new char[2]();
-  argv[1] = "..//misc//ftp";
-  EXPECT_EQ(main_function(2, argv), 0);
+  int ar = 2;
+  char tmp1[] = "Test";
+  char tmp2[] = "..//misc//ftp";
+  char* argv[] = {tmp1, tmp2};
+  EXPECT_EQ(main_function(ar, argv), 0);
 }
